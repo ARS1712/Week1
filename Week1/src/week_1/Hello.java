@@ -18,11 +18,16 @@ public class Hello {
 
 		count = extracted(scan);
 
-		System.out.println("Total Price: ");
-		total = scan.nextLong();
+		scanTotal(scan);
 
 		ProductPurchase purchase = new ProductPurchase(pen, count, count, supplier);
 
+	}
+
+	private static void scanTotal(Scanner scan) {
+		long total;
+		System.out.println("Total Price: ");
+		total = scan.nextLong();
 	}
 
 	private static int extracted(Scanner scan) {
