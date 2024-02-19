@@ -15,9 +15,7 @@ public class Hello {
 		String supplier;
 
 		supplier = scanParameter(scan);
-
 		count = extracted(scan);
-
 		scanTotal(scan);
 
 		ProductPurchase purchase = new ProductPurchase(pen, count, count, supplier);
